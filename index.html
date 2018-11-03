@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+       crossorigin="anonymous">
+   <title>NY Times API Assigment</title>
+</head>
+
+<style>
+
+</style>
+
+<body class="container">
+   <div class="jumbotron">
+       <h1 class="display-4">NY Times Article Search</h1>
+   </div>
+
+   <div class="row">
+       <div class="col-md-12">
+           <div class="card">
+               <div class="card-header">
+                   <strong>Search Paramaters:</strong>
+               </div>
+               <div class="card-body">
+                   <div class="container">
+                       <h2 class="display-15">Search Parameters</h2>
+                       <form id="formContent">
+                           <div class="form-group">
+                               <label id="searchTerm" for="searchTerm">Search Term</label>
+                               <input type="text" class="form-control" placeholder="Enter Search Term Here">
+                           </div>
+
+                           <div class="form-group">
+                               <label for="searchTerm1"> Number of records</label>
+                               <input type="text" class="form-control" placeholder="Number of records">
+                           </div>
+
+                           <div class="form-group">
+                               <label for="searchTerm1"> Start Year</label>
+                               <input type="text" class="form-control" placeholder="Start Year (optional)">
+                           </div>
+
+                           <div class="form-group">
+                               <label for="searchTerm1"> End Year</label>
+                               <input type="text" class="form-control" placeholder="End Year (optional)">
+                           </div>
+
+                           <button id="searchBtn" type="submit" class="btn btn-primary">Search</button>
+                           <button id="clearBtn" type="submit" class="btn btn-primary">Clear Results</button>
+
+                       </form>
+                   </div>
+               </div>
+           </div>
+               <div id="searchResults" class="row">
+                   <div class="col-md-12">
+                       <div class="card">
+                           <div class="card-header">
+                               <strong>Top Articles :</strong>
+                           </div>
+                           <div class="card-body">
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+           </div>
+       </div>
+   </div>
+</body>
+
+</html>
